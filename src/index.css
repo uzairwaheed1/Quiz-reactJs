@@ -16,6 +16,29 @@ code {
 /* header  */
 .header{
   width: 100%;
-  background-color: #10266B;
+  background-color: #07216B;
   height: 85px;
+}
+.header > img{
+  width: 100px;
+}
+
+.logo-img{
+  width: 50px;
+}
+.logo-text{
+  width: 165px;
+  color: #E9ECEF;
+  margin-top: 15px;
+  margin-left: 26px;
+  font-weight: 300;
+  font-size: 21px;
+
+}
+.logo{
+  margin-left: 52px;
+  display: inline-block;
+  margin-top: 16px;  
+  display: inline-flex;
+
 }
