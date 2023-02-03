@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+*{
+  margin: 0px;
+}
 
 /* header  */
 .header{
@@ -41,4 +44,55 @@ code {
   margin-top: 16px;  
   display: inline-flex;
 
+}
+
+/* Landing page  */
+.heading{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  /* padding-top: 75px; */
+}
+.main-landing{
+  width: 100%;
+  height: 500px;
+  background-color: #E9ECEF;
+  padding-top: 58px;
+}
+.heading > h1{
+  font-weight: 200;
+    font-size: 44px;
+    color: #07216B;
+}
+.description{
+  height: 28px;
+  display: flex;
+  width: 100%;
+  justify-content: center;}
+.description > p{
+  color: #626669;
+  font-weight: 300;
+  font-size: 22px;
+}
+.landing-img{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  opacity: .9;
+}
+.landing-img > img{
+  width: 357px;
+
+}
+.start-btn{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+.start-btn > Button{
+  height: 34px;
+  width: 12%;
+  /* background-color: #FDE9D4; */
+  color: #626669;
 }
