@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 function SignUp() {
   return (
@@ -25,6 +26,7 @@ function SignUp() {
           <div>
 
           <input type="submit" defaultValue="Submit" />
+          <Link to='/signin' className="navigate">Log In</Link>
           </div>
         </form>
       </div>
