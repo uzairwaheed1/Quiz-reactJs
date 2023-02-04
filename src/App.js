@@ -6,6 +6,7 @@ import {BrowserRouter} from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom';
 import SignUp from './component/SignUp';
 import SignIn from './component/SignIn';
+import QuizSubject from './component/QuizSubject';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signin' element={<SignIn/>}/>
       {/* <Route/> */}
-      {/* <Route path='/' element={<LandingPage/>}/> */}
+      <Route path='/subject' element={<QuizSubject/>}/>
     </Routes>
     </BrowserRouter>
     </>
