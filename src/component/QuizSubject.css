@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    background-color: #e9ecef;
+}
+.sub-main{
+margin:  15px 30px;
+}
+.sub-main > h1{
+    margin-bottom: 25px;
+
+}
+.center-divider{
+
+    height: 1px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #d8dbe1;
+    opacity: 1;
+}
+.subjects-card{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+
+}
+.start-btn-quiz{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.start-btn-quiz > Button{
+    width: 193px;
+}

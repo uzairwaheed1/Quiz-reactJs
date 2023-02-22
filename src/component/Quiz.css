@@ -1,0 +1,41 @@
+.question-display{
+    height: 554px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.question-display > div{
+    background-color: white;
+    width: 55%;
+    height: 397px;
+    border-radius: 17px;
+padding: 40px;
+padding-top: 30px;
+
+
+}
+.radio-input{
+    margin-top: 20px;
+}
+.timer{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.circular-progress{
+    display: flex;
+    justify-content: center;
+}
+.remark{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* font-size: 44px; */
+    color: #07216B;}
+
+    .remark > h1{
+        font-weight: 400 ;
+
+    }

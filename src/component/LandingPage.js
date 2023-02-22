@@ -1,5 +1,6 @@
 import React from "react";
-import {Button} from 'antd'
+import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -18,7 +19,9 @@ function LandingPage() {
           </p>
         </div>
         <div className="start-btn">
+          <Link to={"/signup"}>
             <Button>Start Quiz</Button>
+          </Link>
         </div>
       </div>
     </>

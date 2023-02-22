@@ -7,20 +7,27 @@ import { Routes, Route } from 'react-router-dom';
 import SignUp from './component/SignUp';
 import SignIn from './component/SignIn';
 import QuizSubject from './component/QuizSubject';
+import Quiz from './component/Quiz';
+import Context from './context';
 
 function App() {
   return (
     <>
     <Header/>
-    
     <BrowserRouter>
+    {/* <QuizSubject> */}
+    <Context>
+
     <Routes>
       <Route path='/' element={<LandingPage/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signin' element={<SignIn/>}/>
       {/* <Route/> */}
       <Route path='/subject' element={<QuizSubject/>}/>
+      <Route path='/quiz' element={<Quiz/>}/>
     </Routes>
+    {/* </QuizSubject> */}
+    </Context>
     </BrowserRouter>
     </>
   );

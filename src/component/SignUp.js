@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import  {auth}  from "../firbaseConfig.js";
+import { doc, setDoc } from "firebase/firestore"; 
+import { getFirestore } from "firebase/firestore";
+import app from "../firbaseConfig.js";
+
+
 import "./SignUp.css";
 function SignUp() {
   const [signUpData, setSignUpData] = useState({
@@ -22,17 +27,30 @@ function SignUp() {
       [event.target.name]: event.target.value,
     });
   };
-  const handleSubmit = () => {
+
+
+  const handleSubmit = async () => {
     console.log(signUpData.email);
     console.log(signUpData.username);
     console.log(signUpData.password);
 
-    // const auth = getAuth();
+
     createUserWithEmailAndPassword(auth, signUpData.email, signUpData.password)
       .then((userCredential) => {
         // Signed in
+
+        
         const user = userCredential.user;
         console.log(user)
+        const db = getFirestore(app);
+
+        const dataSaved = async () => {
+          await setDoc(doc(db, "data", user.uid), {
+            name: signUpData.username,
+
+          });
+        }
+        dataSaved()
         navigate("/subject")
         // ...
       })
