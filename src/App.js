@@ -13,11 +13,11 @@ import Context from './context';
 function App() {
   return (
     <>
-    <Header/>
     <BrowserRouter>
     {/* <QuizSubject> */}
     <Context>
 
+    <Header/>
     <Routes>
       <Route path='/' element={<LandingPage/>}/>
       <Route path='/signup' element={<SignUp/>}/>
